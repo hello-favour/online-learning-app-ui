@@ -33,7 +33,7 @@ class CourseScreen extends StatelessWidget {
                           ),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(20),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -155,7 +155,7 @@ class CourseScreen extends StatelessWidget {
                               ),
                               const SizedBox(height: 30),
                               const Text(
-                                "Join the web course in this course, you will learn Html, Css, Javascript, bootstrap, php or java the for the backend",
+                                "Join the web course, in this course, you will learn Html, Css, Javascript, flutter, dart, bootstrap, php or java the for the backend",
                                 style: TextStyle(
                                   fontSize: 17,
                                   color: Colors.black54,

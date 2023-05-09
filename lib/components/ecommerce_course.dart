@@ -38,7 +38,7 @@ class EcommerceCourse extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const AppText(
-                                text: "Web Design\nCourse",
+                                text: "Ecommerce\nCourse",
                                 color: AppColors.appBlack,
                                 fontWeight: FontWeight.bold,
                                 size: 25,

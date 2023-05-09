@@ -38,7 +38,7 @@ class UiDesignCourse extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const AppText(
-                                text: "Web Design\nCourse",
+                                text: "Ui Design\nCourse",
                                 color: AppColors.appBlack,
                                 fontWeight: FontWeight.bold,
                                 size: 25,

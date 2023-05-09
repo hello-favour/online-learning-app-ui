@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:online_learning_app_ui/components/app_text.dart';
-import 'package:online_learning_app_ui/constants/app_colors.dart';
+import 'package:online_learning_app_ui/screens/course_screen.dart';
+import 'package:online_learning_app_ui/themes/app_colors.dart';
 import 'package:online_learning_app_ui/constants/image_path.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -237,6 +238,85 @@ class _HomeScreenState extends State<HomeScreen> {
                       );
                     },
                   ),
+                ),
+                const SizedBox(height: 30),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: AppText(
+                    text: "Popular Course",
+                    color: AppColors.appBlack,
+                    size: 22,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                GridView.builder(
+                  itemCount: courses.length,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                  itemBuilder: (context, index) {
+                    return InkWell(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return const CourseScreen();
+                        }));
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(
+                            vertical: 10, horizontal: 15),
+                        padding: const EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          color: AppColors.secondaryColor,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            AppText(
+                              text: courses[index],
+                              color: AppColors.appBlack,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            const SizedBox(height: 10),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const AppText(
+                                  text: "24 Lesson",
+                                  color: AppColors.appBlack,
+                                ),
+                                Row(
+                                  children: const [
+                                    AppText(
+                                      text: "4.3",
+                                      color: AppColors.appBlack,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: Colors.amber,
+                                      size: 15,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(10),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.asset(
+                                  imageCourses[index],
+                                  height: 90,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),

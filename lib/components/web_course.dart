@@ -17,7 +17,7 @@ class WebCourse extends StatelessWidget {
             padding: const EdgeInsets.only(top: 25),
             child: Column(
               children: [
-                Image.asset(ImagePath.webDesign, height: 30),
+                Image.asset(ImagePath.webDesign),
                 Stack(
                   children: [
                     Padding(
@@ -155,7 +155,7 @@ class WebCourse extends StatelessWidget {
                               ),
                               const SizedBox(height: 30),
                               const Text(
-                                "Join the web course, in this course, you will learn Html, Css, Javascript, flutter, dart, bootstrap, php or java the for the backend",
+                                "The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or an editorial production whose final text is not yet ready.",
                                 style: TextStyle(
                                   fontSize: 17,
                                   color: Colors.black54,

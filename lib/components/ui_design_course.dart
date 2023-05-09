@@ -155,7 +155,7 @@ class UiDesignCourse extends StatelessWidget {
                               ),
                               const SizedBox(height: 30),
                               const Text(
-                                "Join the web course, in this course, you will learn Html, Css, Javascript, flutter, dart, bootstrap, php or java the for the backend",
+                                "In order to have a result that is more in keeping with the final result, the graphic designers, designers or typographers report the Lorem ipsum text in respect of two fundamental aspects, namely readability and editorial requirements.",
                                 style: TextStyle(
                                   fontSize: 17,
                                   color: Colors.black54,

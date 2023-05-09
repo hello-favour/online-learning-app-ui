@@ -4,8 +4,8 @@ import 'package:online_learning_app_ui/constants/image_path.dart';
 import 'package:online_learning_app_ui/themes/app_colors.dart';
 import 'package:online_learning_app_ui/themes/app_spacing.dart';
 
-class CourseScreen extends StatelessWidget {
-  const CourseScreen({super.key});
+class AppCourse extends StatelessWidget {
+  const AppCourse({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class CourseScreen extends StatelessWidget {
             padding: const EdgeInsets.only(top: 25),
             child: Column(
               children: [
-                Image.asset(ImagePath.webDesign),
+                Image.asset(ImagePath.appDev),
                 Stack(
                   children: [
                     Padding(

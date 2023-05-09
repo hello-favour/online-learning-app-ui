@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:online_learning_app_ui/components/app_course.dart';
 import 'package:online_learning_app_ui/components/app_text.dart';
 import 'package:online_learning_app_ui/constants/image_path.dart';
-import 'package:online_learning_app_ui/screens/course_screen.dart';
+import 'package:online_learning_app_ui/components/web_course.dart';
 import 'package:online_learning_app_ui/themes/app_colors.dart';
 
 class AppDevelopmentScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _AppDevelopmentScreenState extends State<AppDevelopmentScreen> {
     return InkWell(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const CourseScreen();
+          return const AppCourse();
         }));
       },
       child: Container(
@@ -46,7 +47,7 @@ class _AppDevelopmentScreenState extends State<AppDevelopmentScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            AppText(
+            const AppText(
               text: "App Development",
               color: AppColors.appBlack,
               fontWeight: FontWeight.w500,

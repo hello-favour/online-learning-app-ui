@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:online_learning_app_ui/components/app_text.dart';
 import 'package:online_learning_app_ui/screens/app_dev_screen.dart';
-import 'package:online_learning_app_ui/screens/course_screen.dart';
+import 'package:online_learning_app_ui/components/web_course.dart';
 import 'package:online_learning_app_ui/screens/ecommerce_screen.dart';
 import 'package:online_learning_app_ui/screens/ui_design_screen.dart';
 import 'package:online_learning_app_ui/screens/web_design_screen.dart';

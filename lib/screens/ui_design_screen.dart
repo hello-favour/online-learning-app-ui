@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:online_learning_app_ui/components/app_text.dart';
+import 'package:online_learning_app_ui/components/ui_design_course.dart';
 import 'package:online_learning_app_ui/constants/image_path.dart';
-import 'package:online_learning_app_ui/screens/course_screen.dart';
+import 'package:online_learning_app_ui/components/web_course.dart';
 import 'package:online_learning_app_ui/themes/app_colors.dart';
 
 class UiDesignScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _UiDesignScreenState extends State<UiDesignScreen> {
     return InkWell(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const CourseScreen();
+          return const UiDesignCourse();
         }));
       },
       child: Container(
